@@ -9,22 +9,29 @@ const routes: Routes = [
     {path: '', redirectTo: 'home', pathMatch: 'full'},
     {path:'home',component:HomeComponent},
     {
-      path: 'employee-management',
-      loadChildren: '../employee-management/employee-management.module#EmployeeManagementModule'
+      path: 'list',
+      loadChildren: '../list/list.module#ListModule'
     },
     {
-      path: 'authority-management',
-      loadChildren: '../authority-management/authority-management.module#AuthorityManagementModule'
+      path: 'forum',
+      loadChildren: '../forum/forum.module#ForumModule'
     },
     {
-      path: 'holiday-management', loadChildren: '../holiday-management/holiday-management.module#HolidayManagementModule'
+      path: 'fine_free',
+      loadChildren: '../fine-free/fine-free.module#FineFreeModule'
     },
     {
-      path: 'payment-management', loadChildren: '../payment-management/payment-management.module#PaymentManagementModule'
+      path: 'client',
+      loadChildren: '../client/client.module#ClientModule'
     },
     {
-      path: 'my-account', loadChildren: '../my-account/my-account.module#MyAccountModule'
-    }
+      path: 'classify',
+      loadChildren: '../classify/classify.module#ClassifyModule'
+    },
+    {
+      path: 'book_review',
+      loadChildren: '../book-review/book-review.module#BookReviewModule'
+    },
   ] },
 ];
 @NgModule({

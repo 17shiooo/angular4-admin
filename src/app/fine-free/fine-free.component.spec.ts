@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { EmployeeManagementComponent } from './employee-management.component';
+import { FineFreeComponent } from './fine-free.component';
 
-describe('EmployeeManagementComponent', () => {
-  let component: EmployeeManagementComponent;
-  let fixture: ComponentFixture<EmployeeManagementComponent>;
+describe('FineFreeComponent', () => {
+  let component: FineFreeComponent;
+  let fixture: ComponentFixture<FineFreeComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ EmployeeManagementComponent ]
+      declarations: [ FineFreeComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(EmployeeManagementComponent);
+    fixture = TestBed.createComponent(FineFreeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HolidayManagementComponent } from './holiday-management.component';
+import { ForumComponent } from './forum.component';
 
-describe('HolidayManagementComponent', () => {
-  let component: HolidayManagementComponent;
-  let fixture: ComponentFixture<HolidayManagementComponent>;
+describe('ForumComponent', () => {
+  let component: ForumComponent;
+  let fixture: ComponentFixture<ForumComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ HolidayManagementComponent ]
+      declarations: [ ForumComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(HolidayManagementComponent);
+    fixture = TestBed.createComponent(ForumComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -68,3 +68,7 @@
 .navbar li:hover,.navbar li:active,.navbar li.active{
     background: #f16300;
 }
+.content{
+    width: 960px;
+    margin: 0 auto;
+}

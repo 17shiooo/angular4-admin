@@ -35,4 +35,6 @@
     <li *ngFor="let nav of navList;" [routerLink]="nav.path" routerLinkActive="active">{{nav.name}}</li>
   </ul>
 </div>
-<router-outlet></router-outlet>
+<div class="content">
+  <router-outlet></router-outlet>
+</div>
