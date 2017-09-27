@@ -9,20 +9,12 @@ const routes: Routes = [
     {path: '', redirectTo: 'home', pathMatch: 'full'},
     {path:'home',component:HomeComponent},
     {
-      path: 'list',
-      loadChildren: '../list/list.module#ListModule'
-    },
-    {
       path: 'forum',
       loadChildren: '../forum/forum.module#ForumModule'
     },
     {
       path: 'fine_free',
       loadChildren: '../fine-free/fine-free.module#FineFreeModule'
-    },
-    {
-      path: 'client',
-      loadChildren: '../client/client.module#ClientModule'
     },
     {
       path: 'classify',
