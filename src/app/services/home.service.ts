@@ -15,7 +15,7 @@ export class HomeService {
   /**
    * 获取排行榜数据
    */
-  requestGetBookPlazaData(bookPlazaParams?:BookPlazaParams): Observable<BookPlazaEntity> {
+  requestGetBookPlazaData(bookPlazaParams?: BookPlazaParams): Observable<BookPlazaEntity> {
     const http_url = `${this.domain}/store/v0/comment/plaza`;
     return this.http.get(http_url).map((result: Response) => result.json())
       .catch(this.getError);;
@@ -27,37 +27,37 @@ export class HomeService {
   }
 }
 
-export class BookPlazaParams{
-  count:number=36;
-  book:number=1;
+export class BookPlazaParams {
+  count: number = 36;
+  book: number = 1;
 }
 
 /**
  * 排行榜实体
  */
-export class BookPlazaEntity{
-  count:number;
-  items:Array<BookPlazaItemEntity>;
-  more:boolean;
-  result:number;
-  total:number;
-  v:number;
+export class BookPlazaEntity {
+  count: number;
+  items: Array<BookPlazaItemEntity>;
+  more: boolean;
+  result: number;
+  total: number;
+  v: number;
 }
 
 /**
  * 排行榜列表详情实体
  */
-export class BookPlazaItemEntity{
-  author:number;
-  anthor_icon:string;
-  author_nick:string;
-  comment_count:number;
-  content:string;
-  create_time:number;
-  id:number;
-  like_count:number;
-  object_id:number;
-  rate:5;
-  status:0;
-  type:0;
+export class BookPlazaItemEntity {
+  author: number;
+  anthor_icon: string;
+  author_nick: string;
+  comment_count: number;
+  content: string;
+  create_time: number;
+  id: number;
+  like_count: number;
+  object_id: number;
+  rate: 5;
+  status: 0;
+  type: 0;
 }

@@ -11,7 +11,7 @@ export class HomeComponent implements OnInit {
 
   private bookPlazaParams: BookPlazaParams = new BookPlazaParams();
 
-  private bookPlazaItemList: Array<BookPlazaItemEntity>; // 排行榜列表
+  public bookPlazaItemList: Array<BookPlazaItemEntity>; // 排行榜列表
 
   constructor(private homeService: HomeService) { }
 
